@@ -1,6 +1,7 @@
 namespace SpriteKind {
     export const Dog = SpriteKind.create()
     export const Marker = SpriteKind.create()
+    export const Trap = SpriteKind.create()
 }
 namespace myTiles {
     //% blockIdentity=images._tile
@@ -232,7 +233,7 @@ e 4 f b 1 1 1 1 b f 4 e
     }
     controller.moveSprite(hero)
 }
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile9, function (sprite, location) {
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Trap, function (sprite, otherSprite) {
     sprite.say("脚都被缠住了", 500)
     controller.moveSprite(sprite, 20, 20)
     pause(1000)
@@ -277,9 +278,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Dog, function (sprite, otherSpri
     scene.cameraShake(4, 500)
     pause(1000)
 })
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location) {
-	
-})
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Dog, function (sprite, otherSprite) {
     bandit.say("阿黄，我帮你解开", 1000)
     pause(1000)
@@ -296,8 +294,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Marker, function (sprite, otherS
         encounter()
     }
 })
+let animationTick = false
 let bandit: Sprite = null
 let dog: Sprite = null
+let trapSprite: Sprite = null
 let encountered = false
 let hero: Sprite = null
 tiles.setTilemap(tiles.createTilemap(
@@ -335,7 +335,6 @@ hero = sprites.create(img`
 . . . . . f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
 `, SpriteKind.Player)
-controller.moveSprite(hero)
 tiles.placeOnTile(hero, tiles.getTileLocation(3, 2))
 scene.cameraFollowSprite(hero)
 intro()
@@ -360,3 +359,46 @@ let markerSprite = sprites.create(img`
 `, SpriteKind.Marker)
 tiles.placeOnTile(markerSprite, tiles.getTileLocation(7, 4))
 info.setLife(5)
+for (let 值 of tiles.getTilesByType(myTiles.tile9)) {
+    trapSprite = sprites.create(img`
+7 7 7 7 6 6 6 6 6 6 6 7 7 7 7 7 
+7 7 7 6 6 7 7 7 7 7 7 6 6 7 7 7 
+7 6 6 6 7 7 7 7 7 7 7 7 6 7 7 7 
+7 6 6 6 7 7 7 7 7 7 7 7 7 7 7 7 
+7 6 6 7 7 7 6 6 6 6 6 7 7 7 7 7 
+7 7 6 6 6 6 7 7 7 7 6 6 7 7 7 7 
+7 7 6 6 7 6 6 6 6 6 6 6 7 7 7 7 
+7 7 7 6 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 6 7 6 6 6 6 6 7 7 7 7 7 7 
+7 7 7 6 6 6 7 7 7 6 6 7 7 7 7 7 
+7 7 7 6 6 6 7 7 7 6 6 7 7 7 7 7 
+7 7 6 6 6 7 6 6 6 6 7 7 7 7 7 7 
+7 7 6 6 7 7 7 7 7 7 7 7 6 7 7 7 
+7 7 7 6 7 7 7 7 7 7 7 6 6 7 7 7 
+7 7 7 7 6 6 6 6 6 6 6 6 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+`, SpriteKind.Trap)
+    trapSprite.z = -10
+    tiles.placeOnTile(trapSprite, 值)
+}
+controller.moveSprite(hero)
+game.onUpdateInterval(500, function () {
+    if (animationTick) {
+        tiles.setTileAt(tiles.getTileLocation(7, 0), myTiles.tile4)
+        tiles.setTileAt(tiles.getTileLocation(7, 1), myTiles.tile1)
+        tiles.setTileAt(tiles.getTileLocation(7, 2), myTiles.tile4)
+        tiles.setTileAt(tiles.getTileLocation(7, 3), myTiles.tile1)
+        tiles.setTileAt(tiles.getTileLocation(7, 5), myTiles.tile4)
+        tiles.setTileAt(tiles.getTileLocation(7, 6), myTiles.tile1)
+        tiles.setTileAt(tiles.getTileLocation(7, 7), myTiles.tile4)
+    } else {
+        tiles.setTileAt(tiles.getTileLocation(7, 0), myTiles.tile1)
+        tiles.setTileAt(tiles.getTileLocation(7, 1), myTiles.tile4)
+        tiles.setTileAt(tiles.getTileLocation(7, 2), myTiles.tile1)
+        tiles.setTileAt(tiles.getTileLocation(7, 3), myTiles.tile4)
+        tiles.setTileAt(tiles.getTileLocation(7, 5), myTiles.tile1)
+        tiles.setTileAt(tiles.getTileLocation(7, 6), myTiles.tile4)
+        tiles.setTileAt(tiles.getTileLocation(7, 7), myTiles.tile1)
+    }
+    animationTick = !(animationTick)
+})

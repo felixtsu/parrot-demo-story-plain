@@ -6,42 +6,42 @@ namespace SpriteKind {
 namespace myTiles {
     //% blockIdentity=images._tile
     export const tile0 = img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+    `
     //% blockIdentity=images._tile
     export const tile1 = img`
-8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
-8 1 1 8 8 8 8 8 8 1 1 8 8 8 8 8 
-8 1 8 8 8 8 8 8 8 8 1 1 8 8 8 8 
-1 8 8 8 1 8 8 8 8 8 9 1 8 8 8 8 
-1 1 8 8 1 9 8 8 8 1 9 1 8 8 8 8 
-8 8 8 8 1 9 8 8 8 1 1 9 8 8 8 8 
-8 8 8 8 8 9 8 8 8 8 1 9 8 8 8 8 
-8 8 8 8 8 1 9 8 8 8 1 9 8 8 8 8 
-8 8 8 8 8 1 9 8 8 8 1 1 8 8 8 8 
-8 8 8 8 1 9 8 8 8 8 8 1 8 8 8 8 
-8 8 8 8 9 8 8 8 8 8 8 1 8 8 8 8 
-8 8 8 8 9 9 8 8 8 9 9 1 8 8 8 8 
-8 8 8 8 9 8 8 8 8 9 1 8 8 8 8 8 
-8 8 8 8 8 8 8 8 8 8 1 8 8 8 8 8 
-8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
-8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
-`
+        8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+        8 1 1 8 8 8 8 8 8 1 1 8 8 8 8 8
+        8 1 8 8 8 8 8 8 8 8 1 1 8 8 8 8
+        1 8 8 8 1 8 8 8 8 8 9 1 8 8 8 8
+        1 1 8 8 1 9 8 8 8 1 9 1 8 8 8 8
+        8 8 8 8 1 9 8 8 8 1 1 9 8 8 8 8
+        8 8 8 8 8 9 8 8 8 8 1 9 8 8 8 8
+        8 8 8 8 8 1 9 8 8 8 1 9 8 8 8 8
+        8 8 8 8 8 1 9 8 8 8 1 1 8 8 8 8
+        8 8 8 8 1 9 8 8 8 8 8 1 8 8 8 8
+        8 8 8 8 9 8 8 8 8 8 8 1 8 8 8 8
+        8 8 8 8 9 9 8 8 8 9 9 1 8 8 8 8
+        8 8 8 8 9 8 8 8 8 9 1 8 8 8 8 8
+        8 8 8 8 8 8 8 8 8 8 1 8 8 8 8 8
+        8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+        8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+    `
     //% blockIdentity=images._tile
     export const tile2 = img`
 1 9 9 8 8 8 8 8 8 8 8 8 8 8 8 8 
@@ -139,61 +139,61 @@ e e e e e e e e e e e e e e e e
 `
     //% blockIdentity=images._tile
     export const tile7 = img`
-e e e e e e e e e e e e e e e e 
-e e e e 5 e e e 5 e 5 e 5 e e e 
-e e 5 e e e e e e e e e 5 e 4 e 
-e e 4 5 e e e e 5 e e e e e e e 
-e e e e e e 4 e 4 e e e 4 e e e 
-e e e e e e e e e e 4 e e e e e 
-e 5 e e e e e e 4 e e e e e e e 
-e e e e e 4 e e e e e e 5 e 4 e 
-e e e 5 e e e e e e e e e e e e 
-e e e e e 4 e e e e e 4 e e e e 
-e e e e e e e e 5 e e e e e e e 
-e e e e e e e e e e e 5 e e 4 e 
-e e e 5 5 e 5 e e e e e e e 5 e 
-e e 4 e e e 4 e e 5 e 4 4 e e e 
-e e e e e e e e e e e e 5 e e e 
-e e e e e e e e e e e e e e e e 
-`
+        e e e e e e e e e e e e e e e e
+        e e e e 5 e e e 5 e 5 e 5 e e e
+        e e 5 e e e e e e e e e 5 e 4 e
+        e e 4 5 e e e e 5 e e e e e e e
+        e e e e e e 4 e 4 e e e 4 e e e
+        e e e e e e e e e e 4 e e e e e
+        e 5 e e e e e e 4 e e e e e e e
+        e e e e e 4 e e e e e e 5 e 4 e
+        e e e 5 e e e e e e e e e e e e
+        e e e e e 4 e e e e e 4 e e e e
+        e e e e e e e e 5 e e e e e e e
+        e e e e e e e e e e e 5 e e 4 e
+        e e e 5 5 e 5 e e e e e e e 5 e
+        e e 4 e e e 4 e e 5 e 4 4 e e e
+        e e e e e e e e e e e e 5 e e e
+        e e e e e e e e e e e e e e e e
+    `
     //% blockIdentity=images._tile
     export const tile8 = img`
-7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
-8 9 f 1 8 f 9 9 f 8 1 f 8 9 f 8 
-e e f e e f e e f e e f e e f e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-e e e e e e e e e e e e e e e e 
-7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
-e e f e e f e e f e e f e e f e 
-e e f e e f e e f e e f e e f e 
-`
+        7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+        8 9 f 1 8 f 9 9 f 8 1 f 8 9 f 8
+        e e f e e f e e f e e f e e f e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        e e e e e e e e e e e e e e e e
+        7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+        e e f e e f e e f e e f e e f e
+        e e f e e f e e f e e f e e f e
+    `
     //% blockIdentity=images._tile
     export const tile9 = img`
-7 7 7 6 6 6 6 6 6 6 6 7 7 7 7 7 
-7 7 6 6 6 6 6 6 6 6 6 6 6 6 7 7 
-7 6 6 6 6 7 7 7 7 6 6 6 6 6 7 7 
-7 6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
-7 6 7 7 7 7 7 6 6 6 6 7 7 7 7 7 
-7 6 6 7 7 6 6 6 7 7 6 6 7 7 7 7 
-7 6 6 6 6 6 7 7 7 7 7 6 6 7 7 7 
-7 7 6 6 6 7 7 7 7 7 7 7 6 7 7 7 
-7 7 7 6 6 6 6 7 7 7 6 6 6 7 7 7 
-7 7 7 6 7 7 6 6 6 6 6 7 7 7 7 7 
-7 7 7 6 7 7 7 7 7 7 7 7 7 7 7 7 
-7 7 7 6 7 7 7 6 6 6 6 7 7 7 7 7 
-7 7 7 6 6 7 6 6 6 6 6 7 7 7 7 7 
-7 7 7 7 6 6 6 6 6 7 7 7 7 7 7 7 
-7 7 7 7 7 6 6 6 7 7 7 6 6 7 7 7 
-7 7 7 7 7 7 6 6 6 6 6 6 7 7 7 7 
-`
+        7 7 7 6 6 6 6 6 6 6 6 7 7 7 7 7
+        7 7 6 6 6 6 6 6 6 6 6 6 6 6 7 7
+        7 6 6 6 6 7 7 7 7 6 6 6 6 6 7 7
+        7 6 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+        7 6 7 7 7 7 7 6 6 6 6 7 7 7 7 7
+        7 6 6 7 7 6 6 6 7 7 6 6 7 7 7 7
+        7 6 6 6 6 6 7 7 7 7 7 6 6 7 7 7
+        7 7 6 6 6 7 7 7 7 7 7 7 6 7 7 7
+        7 7 7 6 6 6 6 7 7 7 6 6 6 7 7 7
+        7 7 7 6 7 7 6 6 6 6 6 7 7 7 7 7
+        7 7 7 6 7 7 7 7 7 7 7 7 7 7 7 7
+        7 7 7 6 7 7 7 6 6 6 6 7 7 7 7 7
+        7 7 7 6 6 7 6 6 6 6 6 7 7 7 7 7
+        7 7 7 7 6 6 6 6 6 7 7 7 7 7 7 7
+        7 7 7 7 7 6 6 6 7 7 7 6 6 7 7 7
+        7 7 7 7 7 7 6 6 6 6 6 6 7 7 7 7
+    `
 }
 scene.onOverlapTile(SpriteKind.Dog, myTiles.tile9, function (sprite, location) {
     dog.say("嗷～呜呜呜呜～～～", 2000)
@@ -204,6 +204,7 @@ scene.onOverlapTile(SpriteKind.Dog, myTiles.tile9, function (sprite, location) {
 function encounter () {
     encountered = true
     controller.moveSprite(hero, 0, 0)
+    hero.x -= 48
     bandit = sprites.create(img`
 . . . . f f f f . . . . 
 . . f f e e e e f f . . 
@@ -226,7 +227,11 @@ e 4 f b 1 1 1 1 b f 4 e
     game.showLongText("强盗：过桥要交过桥费", DialogLayout.Bottom)
     if (game.ask("给钱吗？")) {
         leashTheDog()
-        game.showLongText("你没钱，阿黄 ，咬他", DialogLayout.Bottom)
+        if (hasMoney) {
+            game.showLongText("你这是假钱，阿黄 ，咬他", DialogLayout.Bottom)
+        } else {
+            game.showLongText("你没钱，阿黄 ，咬他", DialogLayout.Bottom)
+        }
     } else {
         leashTheDog()
         game.showLongText("不给钱，阿黄，咬他", DialogLayout.Bottom)
@@ -270,19 +275,47 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     otherSprite.say("没钱别想过去", 500)
     info.changeLifeBy(-1)
     scene.cameraShake(4, 500)
+
+    if (tamed) {
+        dog.follow(bandit)
+    }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Dog, function (sprite, otherSprite) {
-    sprite.say("啊！", 500)
-    otherSprite.say("汪！", 500)
-    info.changeLifeBy(-1)
-    scene.cameraShake(4, 500)
-    pause(1000)
+    if (hasBone) {
+        hasBone = false
+        if (game.ask("把骨头给小狗吗?")) {
+            otherSprite.say("汪呜", 500)
+            tamed = true
+        } else {
+            sprite.say("啊！", 500)
+            otherSprite.say("汪！", 500)
+            info.changeLifeBy(-1)
+            scene.cameraShake(4, 500)
+            pause(1000)           
+        }
+    } else if (!tamed) {
+        sprite.say("啊！", 500)
+        otherSprite.say("汪！", 500)
+        info.changeLifeBy(-1)
+        scene.cameraShake(4, 500)
+        pause(1000)
+    }
 })
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Dog, function (sprite, otherSprite) {
-    bandit.say("阿黄，我帮你解开", 1000)
-    pause(1000)
-    dog.say("汪汪汪～～～", 2000)
-    dog.follow(hero, 100)
+    if (!tamed) {
+        bandit.say("阿黄，我帮你解开", 1000)
+        pause(1000)
+        dog.say("汪汪汪～～～", 2000)
+        dog.follow(hero, 100)
+    } else {
+        bandit.say("阿黄，你怎么变心了", 1000)
+        dog.say("汪汪汪", 1000)
+        pause(1000)
+        bandit.vx = 100
+        bandit.vy = 100
+        bandit.setFlag(SpriteFlag.BounceOnWall, true)
+    }
+    
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
     tiles.setTileAt(tiles.getTileLocation(9, 0), sprites.dungeon.chestOpen)
@@ -294,6 +327,25 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Marker, function (sprite, otherS
         encounter()
     }
 })
+controller.A.onEvent(ControllerButtonEvent.Pressed, function() {
+    if (hero.tileKindAt(TileDirection.Center, sprites.castle.tileGrass2)) {
+        tiles.setTileAt(tiles.locationOfSprite(hero), sprites.castle.tileGrass1)
+        if (randint(1, tiles.getTilesByType(sprites.castle.tileGrass2).length) == 1) {
+            hero.say("哇！挖到了钱！", 1000)
+            hasMoney = true
+        } else {
+            hero.say("这里没有东西", 1000)
+        }
+
+        if (tiles.getTilesByType(sprites.castle.tileGrass2).length == 0) {
+            game.splash("挖到了骨头")
+            hasBone = true
+        }
+    }
+})
+let hasMoney = false
+let hasBone = false
+let tamed = false
 let animationTick = false
 let bandit: Sprite = null
 let dog: Sprite = null
